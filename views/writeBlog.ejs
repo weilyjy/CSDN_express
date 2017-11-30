@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+   <link rel='stylesheet' href='/css/index.css' />
+   <link rel="stylesheet" href="/css/writeBlog.css">
+    <script type="text/javascript" src = "/js/require.js" defer async = "true" data-main = "/js/main"></script> 
+  </head>
+  <body style="background: #F4F4F4">
+    <%-include header%>
+    
+      <div id="writeWrap">
+
+          <p><span>标题：</span><input id="title" type="text" name="title" value=""></input></p> 
+          <input type="date" value="" id="blogDate" />         
+          <div id="myBlog">
+              <textarea name="myBlog" id="blogConent" cols="30" rows="10"></textarea>
+          </div>
+        
+         
+      </div>
+
+    <div id="myInfo">
+      <p><img src="<%=userImg%>" alt=""></p>
+      用户名：<span id="username"><%=username%></span>
+    </div>
+
+     <% if(!username){%>
+     
+            <a href="/login" id="login_a">请先登录</a>
+         <% }else{ %>
+           <button id="upData">提交</button>
+           <button id="delete" onclick="location.href='/writeBlog'">删除</button>
+           <!-- <button id="upData" onclick="location.href='/writeBlog'">提交</button> -->
+         <% } %>
+  
+  </body>
+</html>

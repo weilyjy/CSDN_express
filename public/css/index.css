@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+#wr_head {
+  height: 40px;
+  width: 100%;
+  background: #48525E; }
+
+#logo {
+  margin-left: 30px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("/images/f_icon.png") no-repeat; }
+
+.wr_head_left {
+  float: left; }
+  .wr_head_left a:nth-of-type(2) {
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    height: 40px;
+    line-height: 10px; }
+
+.wr_head_right {
+  float: right;
+  margin-right: 30px;
+  color: #fff; }
+  .wr_head_right a {
+    font-size: 12px;
+    color: #fefefe;
+    display: inline-block;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px 8px; }
+
+#wr_nav {
+  background: #fff;
+  height: 50px;
+  width: 100%;
+  border-bottom: 3px solid #E1E1E1; }
+  #wr_nav ul {
+    float: left;
+    margin-left: -108px;
+    overflow: hidden; }
+    #wr_nav ul li {
+      float: left;
+      height: 50px;
+      line-height: 50px;
+      text-align: center; }
+      #wr_nav ul li a {
+        color: #727272;
+        font-size: 16px;
+        padding: 0 15px; }
+    #wr_nav ul li:nth-of-type(1) {
+      margin-left: 0px; }
+      #wr_nav ul li:nth-of-type(1) a {
+        padding-left: 0; }
+    #wr_nav ul li:hover {
+      border-bottom: 2px solid #CC0000; }
+  #wr_nav .wr_nav_seach {
+    float: right;
+    margin-right: 30px;
+    height: 50px;
+    line-height: 50px; }
+    #wr_nav .wr_nav_seach form input:nth-of-type(1) {
+      width: 356px;
+      border: 0 none;
+      border: 1px solid #E1E1E1;
+      line-height: 22px;
+      height: 26px;
+      padding: 0 5px; }
+
+/*# sourceMappingURL=index.css.map */

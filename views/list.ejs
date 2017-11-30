@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>list</title>
+    <link rel='stylesheet' href='/css/index.css' />
+    <link rel="stylesheet" href="/css/list.css"/>
+    <script type="text/javascript" src = "/js/require.js" defer async = "true" data-main = "/js/main"></script> 
+  </head>
+  <body style="background: #F4F4F4">
+    <%-include header%>
+    <div id="myBlog">
+      <h3>博客专栏</h3>
+
+    </div>
+     <div id="blogList">
+      <table >
+       
+      
+        <%  resData.forEach(function(item,index){ %>
+        <tr>
+
+        <td class="authorImg"><img src="/images/userImg.jpg" alt=""></td>
+        <td class="author"><h4>博客作者:</h4><%=item.username%></td>
+
+        <td class="title">
+          <p><a href="/detail?bid=<%=item.bid%>">
+             标题:<%=item.title%>
+          </a></p>
+       
+        </td>
+        <td class="blogCon"><span>博客内容:</span><%=item.blogConent%></td>
+      </tr>
+
+   <% }) %> 
+      <tr>
+      <td colspan="4">
+        <a href="/list?pageNow=1">首页</a>
+        <a href="/list?pageNow=<%= pageNow>1 ? parseInt(pageNow)-1 : 1 %>">上一页</a>
+        第<%= pageNow %>页/共<%= totalPage %>页
+        <a href="/list?pageNow=<%=pageNow<totalPage ? parseInt(pageNow)+1 : totalPage %>">下一页</a>
+        <a href="/list?pageNow=<%= totalPage %>">最后一页</a>
+        共<%= count %>条数据
+      </td>
+</tr>
+     
+      </table>
+
+    </div>
+  </body>
+</html>

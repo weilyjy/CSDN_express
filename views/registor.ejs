@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/login.css' />
+    <script type="text/javascript" src = "/js/require.js" defer async = "true" data-main = "/js/main"></script> 
+  </head>
+  <body>
+    <div id="wr_registor">
+      <div class="wr_registor_left">
+        <a href="#">
+           <img src="/images/login-banner.png" alt="">
+        </a>
+      </div>
+      <div class="wr_registor_right">
+          <h3>账号注册</h3>
+          <form action="/users/registor?result=<%=result%>" method="post" >
+            <input type="text" placeholder="请输入你的手机号" id="reg_username" name="username">
+            <span id="username_err" class="err"></span>
+            <input type="password" placeholder="请输入密码" id="reg_userpwd" name="userpassword">
+            <span id="userpwd_err" class="err"></span>
+            <input type="submit" value="注册" id="reg_btn">
+          </form>
+      </div>
+      
+    </div>
+  </body>
+</html>

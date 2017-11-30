@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/login.css' />
+    <script type="text/javascript" src = "/js/require.js" defer async = "true" data-main = "/js/main"></script> 
+  </head>
+  <body>
+    <div id="wr_login">
+      <div class="wr_login_left">
+        <a href="#">
+           <img src="/images/login-banner.png" alt="">
+        </a>
+      </div>
+      <div class="wr_login_right">
+          <h3>账号登录</h3>
+          <form action="/users/login" method="post" id="log_form">
+            <input type="text" placeholder="请输入用户名" name="username" id="log_username">
+            <span id="username_err"></span>
+            <input type="password" placeholder="请输入密码" name="userpassword" id="log_userpwd">
+            <span id="userpwd_err"></span>
+            <input type="checkbox" value=""><span>下次自动登录</span>
+            <a href="#">忘记密码</a>
+             <span id="err_span"></span>
+            <input type="submit" value="登录" id="log_btn">
+          </form>
+      </div>
+    </div>
+  </body>
+</html>

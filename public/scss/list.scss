@@ -1,0 +1,74 @@
+#myBlog{
+	width:100%;
+}
+#blogList{
+	margin-top: 10px;
+	margin-left:100px;
+	background:#fff;
+	width:850px;
+	table{
+		tr{
+			display:block;
+			width:850px;
+			height:205px;
+			padding:10px 0;
+			border-bottom:1px solid #E7ECEF;
+			.author{
+				width: 150px;
+				padding: 0 20px;
+				float: left;
+			}
+			.authorImg{
+				border-right:1px solid #E7ECEF;
+				img{
+					margin-left:20px;
+			    	width:60px;
+			    	height:60px;
+			    	margin:10px 50px;
+			    	border-radius:50%;
+			    	border:1px solid #464646;
+			    	display:block;
+			    	margin-top:20px;
+				}
+				
+			}
+			.title{
+
+				display: block;
+				margin-top:-25px;
+				font-size: 20px;
+				color: #333;
+				font-weight: 800;
+				p{
+					a{
+						color: #333;
+					}
+					a:hover{
+						color:#c00;
+					}
+				}
+			}
+			
+			.blogCon{
+				span{
+					color:#333;
+					font-size:16px;
+				}
+				color:#888888;
+				font-size:14px;
+			}
+		}
+		#tabble_nav{
+			height:50px;
+			line-height:50px;
+			td{
+
+				a{
+					padding:0 25px;
+				}
+				
+			}
+		}
+
+	}
+}

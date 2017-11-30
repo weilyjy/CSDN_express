@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <link rel='stylesheet' href='/css/index.css' />
+     <link rel="stylesheet" href="/css/list.css"/>
+     <script type="text/javascript" src = "/js/require.js" defer async = "true" data-main = "/js/main"></script>
+  </head>
+  <body style="background: #E7ECEF;">
+   <!--  <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p> -->
+  <%-include header%>
+    <div id="wr_nav">
+      <ul>
+        <li><a href="#">首页</a></li>
+       
+        <li><a href="/writeBlog" id="writelogo">写博客</a></li>
+        <li><a href="/list">博客专栏</a></li>
+        <!-- <li><a href="/writeBlog/lookMyBlog">我的博客</a></li> -->
+      </ul>
+      <div class="wr_nav_seach">
+        <form action="">
+          <input type="text" placeholder="搜索" name="seachKey">
+          <input type="submit">
+        </form>
+      </div>
+    </div> 
+     <div id="blogList">
+      <table >
+     
+      </table>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+  <div id="wr_head">
+    	<div class="wr_head_left">
+  			<a href="#" id="logo"></a>
+  			<a href="#">博客</a>
+
+    	</div>
+      <% if(!username) { %>
+        <div class="wr_head_right">
+          <a href="/login">登录</a>|
+          <a href="/registor">注册</a>
+        </div>
+     
+     <%}else{ %>
+        <div class="wr_head_right"> 
+          你好：<a href="" id='user'><%=username%></a>
+          <input type="button" value="退出登录" onclick="location.href='/logout'">      
+        </div>
+        <h2><a href='/writeBlog/lookMyBlog?username=<%=username%>'>我的博客</a></h2>
+     <% } %>
+		    
+    </div>

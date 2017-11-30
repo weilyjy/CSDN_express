@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+   <link rel='stylesheet' href='/css/index.css' />
+   <link rel="stylesheet" href="/css/detail.css">
+    <script type="text/javascript" src = "/js/require.js" defer async = "true" data-main = "/js/main"></script> 
+  </head>
+  <body style="background: #CCE2F0">
+    <%-include header%> 
+  <div id="blog">
+  
+    <h3 ><%=item.username%>的博客</h3>
+  </div>
+    <div id="myInfo">
+    <p class="personInfo">个人资料</p>
+      <p><img src="/images/userImg.jpg" alt=""></p>
+      用户名：<span id="username"><%=item.username%></span>
+    </div>
+  <div id="myBlog">
+  <i id="bid"><%=item.bid%></i>
+    <h3><i></i><%=item.title%></h3>
+    <div id="blog_nav">
+      <a href="#"><span>时间:<%=item.blogDate%></span></a>
+      <a href="#"><i></i><span>阅读次数</span></a>
+      <a href="#" id="comment_a"><i></i><span>评论</span></a>
+      <a href="#"><i></i><span>收藏</span></a>
+      <a href="#"><i></i><span>举报</span></a>
+    </div><br>
+    <div id="myBlog_con">
+     <%=item.blogConent%>
+    </div>
+  </div>
+  <div id="comment">
+          <p><span>标题：</span><input id="com_title" type="text" name="title" value=""></input></p> 
+
+          <input type="date" value="" id="com_Date" /> 
+          <input type="button" value="X" id="off" style="float: right;width: 30px;height: 30px;">       
+          <div id="comCon">
+              <textarea name="comConent" id="com_Conent" cols="30" rows="10"></textarea>
+          </div>
+    <input type="button" value="提交" id="comment_Btn" >
+  </div>
+
+  <div id="blog_comment">
+  
+    <ul >
+    </ul>
+
+  </div>
+
+  </body>
+</html>
